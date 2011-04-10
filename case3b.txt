@@ -20,7 +20,7 @@ Description:
 4. (Assume user cancels)
 	4.1. App returns to main menu.
 5. (Assume User selects one of the existing rules)
-	5.1. User is presented with "Rule Information" screen for that rule.
+	5.1. User is presented with "Rule Information" screen for the selected rule.
 	5.2. (Assume User cancels)
 		5.2.1. User is returned to step 2.
 	5.3. (If User continues)
@@ -32,7 +32,7 @@ Description:
 		5.3.4. The rule is checked for conflicts with other rules
 		5.3.5. (Assume a conflict is found)
 			5.3.5.1. User is notified of the conflicting settings
-			5.3.5.2. User is returned to step 6.1 to make changes
+			5.3.5.2. User is returned to step 5.1. to make changes
 		5.3.6. (If no conflict is found)
 			5.3.6.1. The settings are updated in the database along with the conditions.
 			5.3.6.2. User is presented with confirmation of the changes

@@ -1,27 +1,16 @@
 Project Use Case
 
-Goal: User deletes a time and location sensitive configuration
+Goal: Conditional configuration settings are applied/removed when conditions are met/expire.
 
-Initial state: User chooses to delete an existing conditional configuration
+Initial state: Conditions for an existing configuration are met or expire.
+
+Final state: Settings for the triggered configuration are applied or removed.
 
 Description:
-1. User chooses "Edit Existing Rule" option from main program.
-2. User is presented with a list of existing rules.
-3. User selects one of the existing rules.
-4. User is presented with "Rule Information" screen for that rule.
-5. (Assume User cancels)
-	5.1. App returns to main menu.
-6. (If User continues)
-	6.1. User changes the rule's name or trigger conditions as desired.
-	6.2. (Assume user clicks "Settings for this Rule...")
-		6.2.1. User is presented with the full Android Settings menu.
-		6.2.2. User chooses settings for the rule and then exits the menu.
-	6.3. User chooses to save the new rule.
-	6.4. The rule is checked for conflicts with other rules
-	6.5. (Assume a conflict is found)
-		6.5.1. User is notified of the conflicting settings
-		6.5.2. User is returned to step 6.1 to make changes
-	6.6. (If no conflict is found)
-		6.6.1. The settings are updated in the database along with the conditions.
-		6.6.2. User is presented with confirmation of the changes
-		6.6.3. App returns to main menu
+1. (Assume conditions for a saved rule are met)
+	1.1. The program saves the current android settings in a database.
+	1.2. The program loads the android settings for the given rule.
+	1.3. The program marks the rule as active.
+2. (Assume conditions for an active rule expire)
+	2.1. The program loads the settings that were saved when the rule was triggered.
+	2.2. The program marks the rule as inactive.
