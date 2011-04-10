@@ -1,0 +1,16 @@
+Project Use Case 
+
+Goal: User receives a geotagged picture.
+
+Initial state: User arrives at a location with a geotagged picture.
+
+Final State: User sees the geotagged picture, and marks it as seen.
+
+Description:
+1. User moves towards a specific location with a geotagged picture (or pictures). 
+2. As user nears the location, system displays the picture title (or list of titles).
+3. User selects a picture. 
+4. System displays the picture. 
+5. User marks the picture as seen. 
+6. (If user ignores the alert)
+	6.1. System alerts the user if the user moves away from the area without seeing the picture.

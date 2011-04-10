@@ -12,17 +12,17 @@ Description:
 3. User selects To-do.
 4. System displays the To-do's details. 
 5. (If user declines To-do)
-	1. User hits "Decline To-do" button.
-	2. System notifies the creator of the To-do (if someone other than user) that To-do has been declined.
-	3. System saves To-do, but it removes it from user's list, for this visit.
+	5.1. User hits "Decline To-do" button.
+	5.2. System notifies the creator of the To-do (if someone other than user) that To-do has been declined.
+	5.3. System saves To-do, but it removes it from user's list, for this visit.
 6. (If user accepts To-do)
-	1. User hits "Accept To-do" button.
-	2. System displays confirmation: "Are you sure you gonna do the To-do?"
-	3. User confirms.
-	4. System removes To-do from the user's list.
-	5. System notifies the creator of the To-do (if someone other than user) that To-do has been done.
+	6.1. User hits "Accept To-do" button.
+	6.2. System displays confirmation: "Are you sure you gonna do the To-do?"
+	6.3. User confirms.
+	6.4. System removes To-do from the user's list.
+	6.5. System notifies the creator of the To-do (if someone other than user) that To-do has been done.
 7. (If user ignores To-do)
-	1. System alerts the user if the user moves away from the area without accepting or declining To-do.
+	7.1. System alerts the user if the user moves away from the area without accepting or declining To-do.
 
 
 
@@ -37,10 +37,10 @@ Final State: User saves a Place-it To-do.
 Description: 
 1. User wants to create or edit a Place-it To-do.
 2. (If user wants to create a To-do)
-	1. User selects "Create To-Do" button.  
-	2. User selects the To-do's location on Google Maps, and specifies the header, description, and person for the To-do. 
+	2.1. User selects "Create To-Do" button.  
+	2.2. User selects the To-do's location on Google Maps, and specifies the header, description, and person for the To-do. 
 3. (If user wants to edit a To-do)
-	1. User selects a To-do. 
-	2. User edits the details of To-do.
+	3.1. User selects a To-do. 
+	3.2. User edits the details of To-do.
 4. User saves To-do.  
-6. System adds or updates To-do on the specified person's list. 
+5. System adds or updates To-do on the specified person's list. 

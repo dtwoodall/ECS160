@@ -1,0 +1,23 @@
+Goal: User creates or edits a picture for a particular person, at a particular location. 
+
+Initial State: User wants to create or edits a geotagged picture.
+
+Final State: User saves a geotagged picture. 
+
+Description: 
+1. User chooses "Geotagged Pictures" from the main program. 
+2. System displays a list of geotagged pictures. 
+2. (If user wants to tag a picture)
+	2.1. User selects "Pictures."
+	2.2. System asks user to fill in fields for picture, contact name, location, and message. 
+		2.2.1. System displays the user's picture gallery on the phone. 
+		2.2.2. User selects a picture.
+		2.2.3. System displays the user's Contacts list. 
+		2.2.4. User selects a Contact. 
+		2.2.5. System displays a list of saved locations on Google Maps.
+		2.2.6. User selects a location. 
+		2.2.7. User types in a message about the picture. 
+3. (If user wants to edit a geotagged picture)
+	3.1. User selects a picture. 
+	3.2. User edits the details of picture. 
+4. User saves the picture. 
