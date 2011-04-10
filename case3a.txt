@@ -20,7 +20,7 @@ Description:
 	4.6. The rule is checked for conflicts with existing rules
 	4.7. (Assume a conflict is found)
 		4.7.1. User is notified of the conflicting settings
-		4.7.2. User is returned to step 4.2 to make changes
+		4.7.2. User is returned to step 4.1 to make changes
 	4.8. (If no conflict is found)
 		4.8.1. The settings are saved in a database along with the given conditions.
 		4.8.2. User is presented with confirmation of the new rule
