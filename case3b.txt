@@ -9,21 +9,31 @@ Final State: User saves changes to conditional configuration
 Description:
 1. User chooses "Edit Existing Rule" option from main program.
 2. User is presented with a list of existing rules.
-3. User selects one of the existing rules.
-4. User is presented with "Rule Information" screen for that rule.
-5. (Assume User cancels)
-	5.1. App returns to main menu.
-6. (If User continues)
-	6.1. User changes the rule's name or trigger conditions as desired.
-	6.2. (Assume user clicks "Settings for this Rule...")
-		6.2.1. User is presented with the full Android Settings menu.
-		6.2.2. User chooses settings for the rule and then exits the menu.
-	6.3. User chooses to save the new rule.
-	6.4. The rule is checked for conflicts with other rules
-	6.5. (Assume a conflict is found)
-		6.5.1. User is notified of the conflicting settings
-		6.5.2. User is returned to step 6.1 to make changes
-	6.6. (If no conflict is found)
-		6.6.1. The settings are updated in the database along with the conditions.
-		6.6.2. User is presented with confirmation of the changes
-		6.6.3. App returns to main menu
+3. (Assume user decides to delete a rule from the list)
+	3.1. User presses delete button next to list item
+	3.2. User is asked to confirm the delete
+	3.3. (Assume user declines confirmation)
+		3.3.1. User is returned to step 2.
+	3.4. (If user accepts)
+		3.4.1. The selected rule is removed from the database.
+		3.4.2. User is returned to step 2 (with deleted rule no longer in the list).
+4. (Assume user cancels)
+	4.1. App returns to main menu.
+5. (Assume User selects one of the existing rules)
+	5.1. User is presented with "Rule Information" screen for that rule.
+	5.2. (Assume User cancels)
+		5.2.1. User is returned to step 2.
+	5.3. (If User continues)
+		5.3.1. User changes the rule's name or trigger conditions as desired.
+		5.3.2. (Assume user clicks "Settings for this Rule...")
+			5.3.2.1. User is presented with the full Android Settings menu.
+			5.3.2.2. User chooses settings for the rule and then exits the menu.
+		5.3.3. User chooses to save the new rule.
+		5.3.4. The rule is checked for conflicts with other rules
+		5.3.5. (Assume a conflict is found)
+			5.3.5.1. User is notified of the conflicting settings
+			5.3.5.2. User is returned to step 6.1 to make changes
+		5.3.6. (If no conflict is found)
+			5.3.6.1. The settings are updated in the database along with the conditions.
+			5.3.6.2. User is presented with confirmation of the changes
+			5.3.6.3. App returns to main menu
