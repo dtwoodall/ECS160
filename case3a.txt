@@ -1,0 +1,27 @@
+Project Use Case
+
+Goal: User creates a time and location sensitive configuration
+
+Initial state: User chooses to create a new conditional configuration
+
+Final State: User saves conditional configuration for use
+
+Description:
+1. User chooses "New Conditional Configuration Rule" option from main program.
+2. User is presented with "Rule Information" screen
+3. (Assume User cancels)
+	3.1. App returns to main menu
+4. (If User continues)
+	4.1. User names the rule and chooses the trigger conditions (e.g. _location_ within _100ft_ of _ECS160_ AND _time_ from _1pm_ to _2pm_ on _MWF_, _repeating_ from _TODAY_ to _6/3/11_)
+	4.2. User chooses "Settings for this Rule..."
+	4.3. User is presented with the full Android Settings menu.
+	4.4. User chooses settings for the rule and then exits the menu.
+	4.5. User chooses to save the new rule.
+	4.6. The rule is checked for conflicts with existing rules
+	4.7. (Assume a conflict is found)
+		4.7.1. User is notified of the conflicting settings
+		4.7.2. User is returned to step 4.2 to make changes
+	4.8. (If no conflict is found)
+		4.8.1. The settings are saved in a database along with the given conditions.
+		4.8.2. User is presented with confirmation of the new rule
+		4.8.3. App returns to main menu
